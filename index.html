@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>52-Card Deck</title>
+    <link rel="stylesheet" href="./index.css">
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+
+    <div class="card" data-suit="♠" data-rank="A">
+      <div class="chest ace">♠</div>
+    </div>
+
+    <div class="card flipped" data-suit="♠" data-rank="2">
+      <div class="chest two" data-suit="♠">
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+      </div>
+    </div>
+
+    <div class="card" data-suit="♠" data-rank="3">
+      <div class="chest three" data-suit="♠">
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+      </div>
+    </div>
+
+    <div class="card" data-suit="♠" data-rank="4">
+      <div class="chest four" data-suit="♠">
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+      </div>
+    </div>
+
+    <div class="card" data-suit="♠" data-rank="5">
+      <div class="chest five" data-suit="♠">
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+      </div>
+    </div>
+
+    <div class="card" data-suit="♠" data-rank="6">
+      <div class="chest six" data-suit="♠">
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+      </div>
+    </div>
+
+    <div class="card" data-suit="♠" data-rank="7">
+      <div class="chest seven" data-suit="♠">
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+      </div>
+    </div>
+
+    <div class="card" data-suit="♠" data-rank="8">
+      <div class="chest eight" data-suit="♠">
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+      </div>
+    </div>
+
+    <div class="card" data-suit="♠" data-rank="9">
+      <div class="chest nine" data-suit="♠">
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+      </div>
+    </div>
+
+    <div class="card" data-suit="♠" data-rank="10">
+      <div class="chest ten" data-suit="♠">
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+        <div class="symbol spade"></div>
+      </div>
+    </div>
+
+    <div class="card" data-suit="♠" data-rank="J">
+      <div class="chest jack"></div>
+    </div>
+
+    <div class="card" data-suit="♠" data-rank="Q">
+      <div class="chest queen"></div>
+    </div>
+
+    <div class="card" data-suit="♠" data-rank="K">
+      <div class="chest king"></div>
+    </div>
+
+    <div class="card" data-suit="♥" data-rank="A">
+      <div class="chest ace">♥</div>
+    </div>
+
+    <div class="card" data-suit="♥" data-rank="2">
+      <div class="chest two" data-suit="♥">
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+      </div>
+    </div>
+
+    <div class="card flipped" data-suit="♥" data-rank="3">
+      <div class="chest three" data-suit="♥">
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+      </div>
+    </div>
+
+    <div class="card" data-suit="♥" data-rank="4">
+      <div class="chest four" data-suit="♥">
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+      </div>
+    </div>
+
+    <div class="card" data-suit="♥" data-rank="5">
+      <div class="chest five" data-suit="♥">
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+      </div>
+    </div>
+
+    <div class="card" data-suit="♥" data-rank="6">
+      <div class="chest six" data-suit="♥">
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+      </div>
+    </div>
+
+    <div class="card" data-suit="♥" data-rank="7">
+      <div class="chest seven" data-suit="♥">
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+      </div>
+    </div>
+
+    <div class="card" data-suit="♥" data-rank="8">
+      <div class="chest eight" data-suit="♥">
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+      </div>
+    </div>
+
+    <div class="card" data-suit="♥" data-rank="9">
+      <div class="chest nine" data-suit="♥">
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+      </div>
+    </div>
+
+    <div class="card" data-suit="♥" data-rank="10">
+      <div class="chest ten" data-suit="♥">
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+        <div class="symbol heart"></div>
+      </div>
+    </div>
+
+    <div class="card" data-suit="♥" data-rank="J">
+      <div class="chest jack"></div>
+    </div>
+
+    <div class="card" data-suit="♥" data-rank="Q">
+      <div class="chest queen"></div>
+    </div>
+
+    <div class="card" data-suit="♥" data-rank="K">
+      <div class="chest king"></div>
+    </div>
+
+    <div class="card" data-suit="♣" data-rank="A">
+      <div class="chest ace">♣</div>
+    </div>
+
+    <div class="card" data-suit="♣" data-rank="2">
+      <div class="chest two" data-suit="♣">
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+      </div>
+    </div>
+
+    <div class="card" data-suit="♣" data-rank="3">
+      <div class="chest three" data-suit="♣">
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+      </div>
+    </div>
+
+    <div class="card flipped" data-suit="♣" data-rank="4">
+      <div class="chest four" data-suit="♣">
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+      </div>
+    </div>
+
+    <div class="card" data-suit="♣" data-rank="5">
+      <div class="chest five" data-suit="♣">
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+      </div>
+    </div>
+
+    <div class="card" data-suit="♣" data-rank="6">
+      <div class="chest six" data-suit="♣">
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+      </div>
+    </div>
+
+    <div class="card" data-suit="♣" data-rank="7">
+      <div class="chest seven" data-suit="♣">
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+      </div>
+    </div>
+
+    <div class="card" data-suit="♣" data-rank="8">
+      <div class="chest eight" data-suit="♣">
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+      </div>
+    </div>
+
+    <div class="card" data-suit="♣" data-rank="9">
+      <div class="chest nine" data-suit="♣">
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+      </div>
+    </div>
+
+    <div class="card" data-suit="♣" data-rank="10">
+      <div class="chest ten" data-suit="♣">
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+        <div class="symbol club"></div>
+      </div>
+    </div>
+
+    <div class="card" data-suit="♥" data-rank="J">
+      <div class="chest jack"></div>
+    </div>
+
+    <div class="card" data-suit="♥" data-rank="Q">
+      <div class="chest queen"></div>
+    </div>
+
+    <div class="card" data-suit="♥" data-rank="K">
+      <div class="chest king"></div>
+    </div>
+
+    <div class="card" data-suit="♦" data-rank="A">
+      <div class="chest ace">♦</div>
+    </div>
+
+    <div class="card" data-suit="♦" data-rank="2">
+      <div class="chest two" data-suit="♦">
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+      </div>
+    </div>
+
+    <div class="card" data-suit="♦" data-rank="3">
+      <div class="chest three" data-suit="♦">
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+      </div>
+    </div>
+
+    <div class="card" data-suit="♦" data-rank="4">
+      <div class="chest four" data-suit="♦">
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+      </div>
+    </div>
+
+    <div class="card flipped" data-suit="♦" data-rank="5">
+      <div class="chest five" data-suit="♦">
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+      </div>
+    </div>
+
+    <div class="card" data-suit="♦" data-rank="6">
+      <div class="chest six" data-suit="♦">
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+      </div>
+    </div>
+
+    <div class="card" data-suit="♦" data-rank="7">
+      <div class="chest seven" data-suit="♦">
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+      </div>
+    </div>
+
+    <div class="card" data-suit="♦" data-rank="8">
+      <div class="chest eight" data-suit="♦">
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+      </div>
+    </div>
+
+    <div class="card" data-suit="♦" data-rank="9">
+      <div class="chest nine" data-suit="♦">
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+      </div>
+    </div>
+
+    <div class="card" data-suit="♦" data-rank="10">
+      <div class="chest ten" data-suit="♦">
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+        <div class="symbol diamond"></div>
+      </div>
+    </div>
+
+    <div class="card" data-suit="♦" data-rank="J">
+      <div class="chest jack"></div>
+    </div>
+
+    <div class="card" data-suit="♦" data-rank="Q">
+      <div class="chest queen"></div>
+    </div>
+
+    <div class="card" data-suit="♦" data-rank="K">
+      <div class="chest king"></div>
+    </div>
+
+  </body>
+</html>

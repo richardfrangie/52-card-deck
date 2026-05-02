@@ -1,0 +1,31 @@
+#+title: Standard 52-Card Deck
+#+date: <2026-05-01 Fri>
+#+author: Richard Frangie
+#+language: en
+
+#+html: <img alt="HTML" src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white">
+#+html: <img alt="HTML" src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white">
+
+This is a small learning project that render a standard 52-card deck using only HTML and CSS. It's designed to be reuse as a web-component and, eventually, to build a solitaire game.
+
+[[file:screenshots/52card-deck.png]]
+
+* Demo
+
+
+* What it covers
+- Pure HTML & CSS
+- Responsive card layouts
+- Flexbox and CSS Grid for layout
+- Positioning and stacking contexts
+- Transforms and transitions for simple animations
+
+Some techniques are intentionally over-engineered or implemented in multiple ways for practical purposes.
+
+* Known limitations
+When a card rotates via the active animation, the back face does not display. Attempts to fix this caused layout and behavioral issues, so it remains as a known limitation for now.
+
+Tested on Chromium and Firefox
+
+* References
+- [[https://www.youtube.com/watch?v=wIGAyJGx2kc&t=125s][ManzDev: 🃏 CSS Cards: Baraja de cartas diseñada sólo con HTML y CSS]]

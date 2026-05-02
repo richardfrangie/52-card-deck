@@ -1,0 +1,202 @@
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 600;
+  src: url('fonts/Montserrat-SemiBold.woff2') format('woff2'),
+       url('fonts/Montserrat-SemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Noto Emoji";
+  font-weight: 600;
+  src: url('fonts/NotoEmoji-SemiBold.woff2') format('woff2'),
+       url('fonts/NotoEmoji-SemiBold.woff') format('woff');
+}
+
+body {
+  --size-width-card: 10vw;
+  --size-height-card: calc(var(--size-width-card) * 1.4);
+  --size-width-chest: var(--size-width-card);
+  --size-height-chest: calc(var(--size-width-card) * 0.8);
+  --size-text: calc(var(--size-width-card) * 0.5);
+  --size-text-rank: calc(var(--size-text) / 2);
+  --rectangle: polygon(15% 0, 15% 100%, 85% 100%, 85% 0);
+  --color-card: white;
+  --red-card: red;
+  --black-card: black;
+  --color-border: gray;
+
+  font-family: 'Montserrat', 'Noto Emoji', sans-serif;
+  font-weight: 600;
+  background: green;
+}
+
+.card {
+  width: var(--size-width-card);
+  height: var(--size-height-card);
+  background: var(--color-card);
+  border-radius: 5%;
+  color: var(--red-card);
+  display: inline-grid;
+  align-items: center;
+  margin: 1rem;
+  border: 1px solid var(--color-border);
+  user-select: none;
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.1rem rgb(0 0 0 / 70%);
+  transition: transform 0.75s ease, box-shadow 0.75s ease, scale 0.75s;
+
+  &::before, &::after {
+    content: attr(data-rank) attr(data-suit);
+    display: block;
+    font-size: var(--size-text-rank);
+    padding: 0 0.25rem;
+  }
+
+  &::after {
+    justify-self: end;
+    align-content: end;
+    transform: rotate(180deg);
+  }
+}
+
+.card[data-suit="♣"], .card[data-suit="♠"] {
+  color: var(--black-card);
+}
+
+.chest {
+  width: var(--size-width-chest);
+  height: var(--size-height-chest);
+  background: var(--color-card);
+  position: relative;
+}
+
+.ace {
+  font-size: var(--size-text);
+  text-align: center;
+  line-height: var(--size-height-chest);
+  cursor: default;
+}
+
+.jack, .queen, .king {
+  background-position: 50% 50%;
+  background-size: 150%;
+  clip-path: var(--rectangle);
+}
+
+.jack {background-image: url("img/jack.png");}
+.queen {background-image: url("img/queen.png");}
+.king {background-image: url("img/king.png");}
+
+.symbol {
+  width: calc(var(--size-height-chest) / 4);
+  height: calc(var(--size-height-chest) / 4);
+  font-size: calc(var(--size-text) / 3);
+  text-align: center;
+  line-height: calc(var(--size-height-chest) / 4);
+}
+
+.diamond::after {content: "♦";}
+.heart::after {content: "♥";}
+.club::after {content: "♣";}
+.spade::after {content: "♠";}
+
+.two, .three {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  & :last-child {
+    transform: rotate(180deg);
+  }
+}
+
+.four, .five, .six, .seven, .eight, .nine, .ten {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  justify-items: center;
+}
+
+:is(.four, .five) :nth-child(n+3) {transform: rotate(180deg);}
+:is(.six, .seven, .eight, .nine, .ten) :nth-child(n+5) {
+  transform: rotate(180deg);
+}
+
+:is(.four, .five) :is(.symbol:nth-child(3), .symbol:nth-child(4)),
+:is(.six, .seven, .eight) :is(.symbol:nth-child(5), .symbol:nth-child(6)) {
+  align-self: end;
+}
+
+:is(.six, .seven, .eight) :is(.symbol:nth-child(3), .symbol:nth-child(4)) {
+  align-self: center;
+}
+
+:is(.five, .seven, .eight, .nine, .ten) .symbol:last-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.nine .symbol:last-child {
+  transform: translate(-50%,-50%) rotate(180deg);
+}
+
+:is(.seven, .eight) .symbol:last-child {top: 32%;}
+
+.eight .symbol:nth-child(7) {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(180deg);
+}
+
+.ten .symbol:nth-child(9) {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(180deg);
+}
+
+.ten .symbol:last-child {top: 25%;}
+
+.flipped {
+  background:
+    repeating-linear-gradient(45deg, var(--red-card), var(--black-card) 10%);
+
+  & .chest {
+    visibility: hidden;
+  }
+
+  &::before, &::after {
+    visibility: hidden;
+  }
+}
+
+.card:hover {
+  scale: 1.1;
+  box-shadow: 0.7rem 0.7rem 0.7rem 0.3rem rgb(0 0 0 / 40%);
+}
+
+.card:active {
+  background:
+    repeating-linear-gradient(45deg, var(--red-card), var(--black-card) 10%);
+  transform: rotateY(540deg);
+
+  & .chest {
+    visibility: hidden;
+  }
+
+  &::before, &::after {
+    visibility: hidden;
+  }
+}
+
+.card:nth-child(13n){
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(360deg); }
+}
