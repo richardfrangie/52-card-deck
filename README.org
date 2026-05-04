@@ -3,8 +3,8 @@
 #+author: Richard Frangie
 #+language: en
 
-#+html: <img alt="HTML" src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white">
-#+html: <img alt="HTML" src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white">
+#+html: <span><img alt="HTML" src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white"></span>
+#+html: <span><img alt="HTML" src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white"></span>
 
 This is a small learning project that render a standard 52-card deck using only HTML and CSS. It's designed to be reuse as a web-component and, eventually, to build a solitaire game.
 
