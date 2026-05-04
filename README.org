@@ -11,7 +11,7 @@ This is a small learning project that render a standard 52-card deck using only 
 [[file:screenshots/52card-deck.png]]
 
 * Demo
-
+[[https://richardfrangie.github.io/52-card-deck/][Live demo →]]
 
 * What it covers
 - Pure HTML & CSS
