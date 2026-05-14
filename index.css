@@ -106,7 +106,7 @@ body {
   align-items: center;
 
   & :last-child {
-    transform: rotate(180deg);
+    transform: scale(1, -1);
   }
 }
 
@@ -117,9 +117,9 @@ body {
   justify-items: center;
 }
 
-:is(.four, .five) :nth-child(n+3) {transform: rotate(180deg);}
+:is(.four, .five) :nth-child(n+3) {transform: scale(1, -1);}
 :is(.six, .seven, .eight, .nine, .ten) :nth-child(n+5) {
-  transform: rotate(180deg);
+  transform: scale(1, -1);
 }
 
 :is(.four, .five) :is(.symbol:nth-child(3), .symbol:nth-child(4)),
@@ -139,7 +139,7 @@ body {
 }
 
 .nine .symbol:last-child {
-  transform: translate(-50%,-50%) rotate(180deg);
+  transform: translate(-50%,-50%) scale(1, -1);
 }
 
 :is(.seven, .eight) .symbol:last-child {top: 32%;}
@@ -148,14 +148,14 @@ body {
   position: absolute;
   top: 65%;
   left: 50%;
-  transform: translate(-50%,-50%) rotate(180deg);
+  transform: translate(-50%,-50%) scale(1, -1);
 }
 
 .ten .symbol:nth-child(9) {
   position: absolute;
   top: 75%;
   left: 50%;
-  transform: translate(-50%,-50%) rotate(180deg);
+  transform: translate(-50%,-50%) scale(1, -1);
 }
 
 .ten .symbol:last-child {top: 25%;}
