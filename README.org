@@ -4,18 +4,18 @@
 #+language: en
 
 #+html: <span><img alt="HTML" src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white"></span>
-#+html: <span><img alt="HTML" src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white"></span>
+#+html: <span><img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white"></span>
 
-This is a small learning project that render a standard 52-card deck using only HTML and CSS. It's designed to be reuse as a web-component and, eventually, to build a solitaire game.
+This is a small learning project that render a standard 52-card deck using only HTML and CSS. It's designed to be used as a Web Components for a [[https://github.com/richardfrangie/playing-card][playing card]] and, eventually, to build a solitaire game.
 
-[[file:screenshots/52card-deck.png]]
+[[file:docs/images/52card-deck.png]]
 
 * Demo
 [[https://richardfrangie.github.io/52-card-deck/][Live demo →]]
 
 * What it covers
 - Pure HTML & CSS
-- Responsive card layouts
+- Responsive card layout
 - Flexbox and CSS Grid for layout
 - Positioning and stacking contexts
 - Transforms and transitions for simple animations
